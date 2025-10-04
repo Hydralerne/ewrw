@@ -7,7 +7,7 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     console.log(Date.now(), 'Visitor', req.headers['x-real-ip']);
-    res.json({ message: 'Hello World' });
+    res.json({ message: 'Hello ass' });
 });
 
 app.get('/test', (req, res) => {
