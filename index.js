@@ -6,8 +6,8 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-    console.log(Date.now(), 'Visitor', req.headers['x-real-ip']);
-    res.json({ message: 'Hello ass' });
+    console.log(Date.now(), 'Request recieved by ass araby', req.headers['x-real-ip'] );
+    res.json({ message: 'Hello ass hiiiiii' });
 });
 
 app.get('/test', (req, res) => {
