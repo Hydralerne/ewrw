@@ -6,8 +6,7 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-    console.log('hiiiiiiiiiiiiiiiiiii', process.env.NEXT_PUBLIC_SOCKET_IO_Production_SERVER, req.headers['x-real-ip']);
-    res.json({ message: 'eeee' });
+    res.json({ message: 'eeee', ass: process.env.tests });
 });
 
 app.get('/test', (req, res) => {
